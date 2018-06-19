@@ -19,10 +19,10 @@ import java.util.Random;
 public class Main {
     private static final Random RANDOM = new Random();
     public static void main(String[] args) {
-        new Main().go(args[0]);
+//        new Main().go(args[0]);
 //        new Main().go2();
 //        new Main().go3();
-//        new Main().go4();
+        new Main().go4();
     }
 
     private void go(final String fileName) {

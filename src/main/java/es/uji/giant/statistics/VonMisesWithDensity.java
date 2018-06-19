@@ -22,7 +22,6 @@ public class VonMisesWithDensity extends AbstractContinuousDistributionWithDensi
     @Override
     public double nextDouble() {
         return super.nextDouble() + mu;
-//        return mu;
     }
 
     public double density(final double x) {

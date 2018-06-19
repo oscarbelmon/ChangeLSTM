@@ -16,7 +16,6 @@ public class VonMisesLinearWithDensity extends VonMisesWithDensity {
     public double nextDouble() {
         mu += speed;
         return super.nextDouble();
-//        return mu;
     }
 
     @Override
