@@ -8,24 +8,9 @@
       "samples": 50
     },
     "after": {
-      "mu": 5.0,
-      "kappa": 84.5,
-      "beta": 0.0,
-      "samples": 50
-    }
-  },
-  {
-    "iterations": 10000,
-    "before": {
       "mu": 0.0,
       "kappa": 84.5,
-      "beta": 0.0,
-      "samples": 50
-    },
-    "after": {
-      "mu": 10.0,
-      "kappa": 84.5,
-      "beta": 0.0,
+      "beta": 0.25,
       "samples": 50
     }
   },
@@ -38,24 +23,9 @@
       "samples": 50
     },
     "after": {
-      "mu": 15.0,
-      "kappa": 84.5,
-      "beta": 0.0,
-      "samples": 50
-    }
-  },
-  {
-    "iterations": 10000,
-    "before": {
       "mu": 0.0,
       "kappa": 84.5,
-      "beta": 0.0,
-      "samples": 50
-    },
-    "after": {
-      "mu": 20.0,
-      "kappa": 84.5,
-      "beta": 0.0,
+      "beta": 0.50,
       "samples": 50
     }
   },
@@ -68,10 +38,25 @@
       "samples": 50
     },
     "after": {
-      "mu": 25.0,
+      "mu": 0.0,
+      "kappa": 84.5,
+      "beta": 0.75,
+      "samples": 50
+    }
+  },
+  {
+    "iterations": 10000,
+    "before": {
+      "mu": 0.0,
       "kappa": 84.5,
       "beta": 0.0,
       "samples": 50
+    },
+    "after": {
+      "mu": 0.0,
+      "kappa": 84.5,
+      "beta": 1.0,
+      "samples": 50
     }
   },
   {
@@ -83,39 +68,24 @@
       "samples": 50
     },
     "after": {
-      "mu": 30.0,
+      "mu": 0.0,
+      "kappa": 84.5,
+      "beta": 1.5,
+      "samples": 50
+    }
+  },
+  {
+    "iterations": 10000,
+    "before": {
+      "mu": 0.0,
       "kappa": 84.5,
       "beta": 0.0,
       "samples": 50
-    }
-  },
-  {
-    "iterations": 10000,
-    "before": {
-      "mu": 0.0,
-      "kappa": 131.0,
-      "beta": 0.0,
-      "samples": 50
     },
     "after": {
-      "mu": 5.0,
-      "kappa": 131.0,
-      "beta": 0.0,
-      "samples": 50
-    }
-  },
-  {
-    "iterations": 10000,
-    "before": {
       "mu": 0.0,
-      "kappa": 131.0,
-      "beta": 0.0,
-      "samples": 50
-    },
-    "after": {
-      "mu": 10.0,
-      "kappa": 131.0,
-      "beta": 0.0,
+      "kappa": 84.5,
+      "beta": 2.0,
       "samples": 50
     }
   },
@@ -128,24 +98,9 @@
       "samples": 50
     },
     "after": {
-      "mu": 15.0,
-      "kappa": 131.0,
-      "beta": 0.0,
-      "samples": 50
-    }
-  },
-  {
-    "iterations": 10000,
-    "before": {
       "mu": 0.0,
       "kappa": 131.0,
-      "beta": 0.0,
-      "samples": 50
-    },
-    "after": {
-      "mu": 20.0,
-      "kappa": 131.0,
-      "beta": 0.0,
+      "beta": 0.25,
       "samples": 50
     }
   },
@@ -158,10 +113,25 @@
       "samples": 50
     },
     "after": {
-      "mu": 25.0,
+      "mu": 0.0,
+      "kappa": 131.0,
+      "beta": 0.50,
+      "samples": 50
+    }
+  },
+  {
+    "iterations": 10000,
+    "before": {
+      "mu": 0.0,
       "kappa": 131.0,
       "beta": 0.0,
       "samples": 50
+    },
+    "after": {
+      "mu": 0.0,
+      "kappa": 131.0,
+      "beta": 0.75,
+      "samples": 50
     }
   },
   {
@@ -173,24 +143,24 @@
       "samples": 50
     },
     "after": {
-      "mu": 30.0,
+      "mu": 0.0,
+      "kappa": 131.0,
+      "beta": 1.0,
+      "samples": 50
+    }
+  },
+  {
+    "iterations": 10000,
+    "before": {
+      "mu": 0.0,
       "kappa": 131.0,
       "beta": 0.0,
       "samples": 50
-    }
-  },
-  {
-    "iterations": 10000,
-    "before": {
-      "mu": 0.0,
-      "kappa": 233.0,
-      "beta": 0.0,
-      "samples": 50
     },
     "after": {
-      "mu": 5.0,
-      "kappa": 233.0,
-      "beta": 0.0,
+      "mu": 0.0,
+      "kappa": 131.0,
+      "beta": 1.5,
       "samples": 50
     }
   },
@@ -198,29 +168,14 @@
     "iterations": 10000,
     "before": {
       "mu": 0.0,
-      "kappa": 233.0,
+      "kappa": 131.0,
       "beta": 0.0,
       "samples": 50
     },
     "after": {
-      "mu": 10.0,
-      "kappa": 233.0,
-      "beta": 0.0,
-      "samples": 50
-    }
-  },
-  {
-    "iterations": 10000,
-    "before": {
       "mu": 0.0,
-      "kappa": 233.0,
-      "beta": 0.0,
-      "samples": 50
-    },
-    "after": {
-      "mu": 15.0,
-      "kappa": 233.0,
-      "beta": 0.0,
+      "kappa": 131.0,
+      "beta": 2.0,
       "samples": 50
     }
   },
@@ -233,24 +188,9 @@
       "samples": 50
     },
     "after": {
-      "mu": 20.0,
-      "kappa": 233.0,
-      "beta": 0.0,
-      "samples": 50
-    }
-  },
-  {
-    "iterations": 10000,
-    "before": {
       "mu": 0.0,
       "kappa": 233.0,
-      "beta": 0.0,
-      "samples": 50
-    },
-    "after": {
-      "mu": 25.0,
-      "kappa": 233.0,
-      "beta": 0.0,
+      "beta": 0.25,
       "samples": 50
     }
   },
@@ -263,24 +203,24 @@
       "samples": 50
     },
     "after": {
-      "mu": 30.0,
+      "mu": 0.0,
+      "kappa": 233.0,
+      "beta": 0.50,
+      "samples": 50
+    }
+  },
+  {
+    "iterations": 10000,
+    "before": {
+      "mu": 0.0,
       "kappa": 233.0,
       "beta": 0.0,
       "samples": 50
-    }
-  },
-  {
-    "iterations": 10000,
-    "before": {
-      "mu": 0.0,
-      "kappa": 517.0,
-      "beta": 0.0,
-      "samples": 50
     },
     "after": {
-      "mu": 5.0,
-      "kappa": 517.0,
-      "beta": 0.0,
+      "mu": 0.0,
+      "kappa": 233.0,
+      "beta": 0.75,
       "samples": 50
     }
   },
@@ -288,14 +228,14 @@
     "iterations": 10000,
     "before": {
       "mu": 0.0,
-      "kappa": 517.0,
+      "kappa": 233.0,
       "beta": 0.0,
       "samples": 50
     },
     "after": {
-      "mu": 10.0,
-      "kappa": 517.0,
-      "beta": 0.0,
+      "mu": 0.0,
+      "kappa": 233.0,
+      "beta": 10.0,
       "samples": 50
     }
   },
@@ -303,14 +243,14 @@
     "iterations": 10000,
     "before": {
       "mu": 0.0,
-      "kappa": 517.0,
+      "kappa": 233.0,
       "beta": 0.0,
       "samples": 50
     },
     "after": {
-      "mu": 15.0,
-      "kappa": 517.0,
-      "beta": 0.0,
+      "mu": 0.0,
+      "kappa": 233.0,
+      "beta": 1.5,
       "samples": 50
     }
   },
@@ -318,29 +258,14 @@
     "iterations": 10000,
     "before": {
       "mu": 0.0,
-      "kappa": 517.0,
+      "kappa": 233.0,
       "beta": 0.0,
       "samples": 50
     },
     "after": {
-      "mu": 20.0,
-      "kappa": 517.0,
-      "beta": 0.0,
-      "samples": 50
-    }
-  },
-  {
-    "iterations": 10000,
-    "before": {
       "mu": 0.0,
-      "kappa": 517.0,
-      "beta": 0.0,
-      "samples": 50
-    },
-    "after": {
-      "mu": 25.0,
-      "kappa": 517.0,
-      "beta": 0.0,
+      "kappa": 233.0,
+      "beta": 2.0,
       "samples": 50
     }
   },
@@ -353,9 +278,84 @@
       "samples": 50
     },
     "after": {
-      "mu": 30.0,
+      "mu": 0.0,
+      "kappa": 517.0,
+      "beta": 0.25,
+      "samples": 50
+    }
+  },
+  {
+    "iterations": 10000,
+    "before": {
+      "mu": 0.0,
       "kappa": 517.0,
       "beta": 0.0,
+      "samples": 50
+    },
+    "after": {
+      "mu": 0.0,
+      "kappa": 517.0,
+      "beta": 0.50,
+      "samples": 50
+    }
+  },
+  {
+    "iterations": 10000,
+    "before": {
+      "mu": 0.0,
+      "kappa": 517.0,
+      "beta": 0.0,
+      "samples": 50
+    },
+    "after": {
+      "mu": 0.0,
+      "kappa": 517.0,
+      "beta": 0.75,
+      "samples": 50
+    }
+  },
+  {
+    "iterations": 10000,
+    "before": {
+      "mu": 0.0,
+      "kappa": 517.0,
+      "beta": 0.0,
+      "samples": 50
+    },
+    "after": {
+      "mu": 0.0,
+      "kappa": 517.0,
+      "beta": 1.0,
+      "samples": 50
+    }
+  },
+  {
+    "iterations": 10000,
+    "before": {
+      "mu": 0.0,
+      "kappa": 517.0,
+      "beta": 0.0,
+      "samples": 50
+    },
+    "after": {
+      "mu": 0.0,
+      "kappa": 517.0,
+      "beta": 1.5,
+      "samples": 50
+    }
+  },
+  {
+    "iterations": 10000,
+    "before": {
+      "mu": 0.0,
+      "kappa": 517.0,
+      "beta": 0.0,
+      "samples": 50
+    },
+    "after": {
+      "mu": 0.0,
+      "kappa": 517.0,
+      "beta": 2.0,
       "samples": 50
     }
   }
