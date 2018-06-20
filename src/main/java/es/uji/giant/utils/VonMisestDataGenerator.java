@@ -9,11 +9,6 @@ public class VonMisestDataGenerator extends DataGenerator {
         for(int i = samplesBefore; i < samplesBefore + samplesAfter; i++)
             data[i] = after.nextDouble();
 
-//        System.out.println("Data:");
-//        for(int i = 0; i < samplesBefore + samplesAfter; i++) {
-//            System.out.println(i + "," + data[i]);
-//        }
-
         return data;
     }
 

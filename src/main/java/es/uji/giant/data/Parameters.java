@@ -1,12 +1,18 @@
 package es.uji.giant.data;
 
 public class Parameters {
+    public final int iterations;
     public final Parameter before;
     public final Parameter after;
 
-    public Parameters(Parameter before, Parameter after) {
+    public Parameters(int sequences, Parameter before, Parameter after) {
+        this.iterations = sequences;
         this.before = before;
         this.after = after;
+    }
+
+    public int getIterations() {
+        return iterations;
     }
 
     public static class Parameter {
