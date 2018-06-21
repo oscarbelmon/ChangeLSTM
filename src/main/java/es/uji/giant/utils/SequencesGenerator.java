@@ -53,14 +53,18 @@ public class SequencesGenerator {
     }
 
     private void process(Parameters parameters) {
-        AbstractContinuousDistributionWithDensity before = new VonMisesLinearWithDensity(parameters.before.getMu(), parameters.before.getKappa(), parameters.before.getBeta(), RandomEngine.makeDefault());
-        AbstractContinuousDistributionWithDensity after = new VonMisesLinearWithDensity(parameters.after.getMu(), parameters.after.getKappa(), parameters.after.getBeta(), RandomEngine.makeDefault());
+//        AbstractContinuousDistributionWithDensity before = new VonMisesLinearWithDensity(parameters.before.getMu(), parameters.before.getKappa(), parameters.before.getBeta(), RandomEngine.makeDefault());
+        AbstractContinuousDistributionWithDensity before = new VonMisesLinearWithDensity(parameters.before.mu, parameters.before.kappa, parameters.before.beta, RandomEngine.makeDefault());
+//        AbstractContinuousDistributionWithDensity after = new VonMisesLinearWithDensity(parameters.after.getMu(), parameters.after.getKappa(), parameters.after.getBeta(), RandomEngine.makeDefault());
+        AbstractContinuousDistributionWithDensity after = new VonMisesLinearWithDensity(parameters.after.mu, parameters.after.kappa, parameters.after.beta, RandomEngine.makeDefault());
 
         DataGenerator generator = new VonMisestDataGenerator()
                 .withDistributionBefore(before)
-                .withSamplesBefore(parameters.before.getSamples())
+//                .withSamplesBefore(parameters.before.getSamples())
+                .withSamplesBefore(parameters.before.samples)
                 .withDistributionAfter(after)
-                .withSamplesAfter(parameters.after.getSamples());
+//                .withSamplesAfter(parameters.after.getSamples());
+                .withSamplesAfter(parameters.after.samples);
 
         for(int i = 0; i < parameters.getIterations(); i++) {
             generator.reset();
@@ -73,18 +77,15 @@ public class SequencesGenerator {
     }
 
     private void window(double[] data, Parameters parameters) {
-        int samples = parameters.before.getSamples();
-        double muBefore = parameters.before.getMu();
-        double muAfter = parameters.after.getMu();
-        double kappaBefore = parameters.before.getKappa();
+        int samples = parameters.before.samples;
 
         StringBuilder sb = new StringBuilder();
-        sb.append(", " + parameters.before.getMu());
-        sb.append(", " + parameters.before.getKappa());
-        sb.append(", " + parameters.before.getBeta());
-        sb.append(", " + parameters.after.getMu());
-        sb.append(", " + parameters.after.getKappa());
-        sb.append(", " + parameters.after.getBeta());
+        sb.append(", " + parameters.before.mu);
+        sb.append(", " + parameters.before.kappa);
+        sb.append(", " + parameters.before.beta);
+        sb.append(", " + parameters.after.mu);
+        sb.append(", " + parameters.after.kappa);
+        sb.append(", " + parameters.after.beta);
 
         List<Double> doubles = Arrays.stream(data)
                 .boxed()

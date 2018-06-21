@@ -16,10 +16,10 @@ public class Parameters {
     }
 
     public static class Parameter {
-        private final double mu;
-        private final double kappa;
-        private final double beta;
-        private final int samples;
+        public final double mu;
+        public final double kappa;
+        public final double beta;
+        public final int samples;
 
         public Parameter(double mu, double kappa, double beta, int samples) {
             this.mu = mu;
@@ -28,20 +28,20 @@ public class Parameters {
             this.samples = samples;
         }
 
-        public double getMu() {
-            return mu;
-        }
-
-        public double getKappa() {
-            return kappa;
-        }
-
-        public double getBeta() {
-            return beta;
-        }
-
-        public int getSamples() {
-            return samples;
-        }
+//        public double getMu() {
+//            return mu;
+//        }
+//
+//        public double getKappa() {
+//            return kappa;
+//        }
+//
+//        public double getBeta() {
+//            return beta;
+//        }
+//
+//        public int getSamples() {
+//            return samples;
+//        }
     }
 }
