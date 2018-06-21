@@ -1,5 +1,6 @@
 package es.uji.giant.utils;
 
+import EDU.oswego.cs.dl.util.concurrent.FJTask;
 import cern.jet.random.engine.RandomEngine;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -66,21 +67,48 @@ public class SequencesGenerator {
 
             double[] data = generator.generateData();
 
-            window(data, parameters.before.getSamples());
+            window(data, parameters);
         }
 
     }
 
-    private void window(double[] data, int samples) {
+    private void window(double[] data, Parameters parameters) {
+        int samples = parameters.before.getSamples();
+        double muBefore = parameters.before.getMu();
+        double muAfter = parameters.after.getMu();
+        double kappaBefore = parameters.before.getKappa();
+
+        StringBuilder sb = new StringBuilder();
+        sb.append(", " + parameters.before.getMu());
+        sb.append(", " + parameters.before.getKappa());
+        sb.append(", " + parameters.before.getBeta());
+        sb.append(", " + parameters.after.getMu());
+        sb.append(", " + parameters.after.getKappa());
+        sb.append(", " + parameters.after.getBeta());
+
         List<Double> doubles = Arrays.stream(data)
                 .boxed()
                 .collect(Collectors.toList());
 
         List<String> list = new ArrayList<>();
 
-        list.add(doubles.subList(0 , samples).toString() + ", 0");
+        String tmp = doubles
+                .subList(0, samples).toString()
+                .replace("[", "")
+                .replace("]", "")
+                + ", 0"
+                + sb.toString();
+
+
+        list.add(tmp);
         for(int i = 1; i < samples; i++) {
-            list.add(doubles.subList(i , i+samples).toString() + ", " + (samples-i));
+            tmp = doubles
+                    .subList(0, samples).toString()
+                    .replace("[", "")
+                    .replace("]", "")
+                    + ", " + (samples-i)
+                    + sb.toString();
+            list.add(tmp);
         }
 
         try {
